@@ -19,9 +19,53 @@ namespace work1
             a = "\n моя строка 1";
             b = "\t моя строка 2";
             c = "\a моя строка 3";
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-            Console.WriteLine(c);
+
+
+            int x, y, z;
+            x = 10;
+            y = 12;
+            z = 3;
+
+            x += y - x++ * z;
+            Console.WriteLine(x);
+            z = --x - y * 5;
+            Console.WriteLine(z);
+            y /= x + 5 % z;
+            Console.WriteLine(y);
+            z = x++ + y * 5;
+            Console.WriteLine(z);
+            x = y - x++ * z;
+            Console.WriteLine(x);
+
+
+            float m, v, j;
+            m = 4;
+            v = 5;
+            j = 4;
+
+            var res = (m + v + j)/33;
+            Console.WriteLine(res);
+
+            double radius = 10;
+            var radiusMath = radius* Math.Pow(pi, 2);
+
+            double height = 20;
+
+            var volumeMatch = pi*Math.Pow(pi, 2)*radius;
+            var areaMatch = 2*pi*radius*(radius + height);
+              
+
+
+            Console.WriteLine(radiusMath);
+            Console.WriteLine(volumeMatch);
+            Console.WriteLine(areaMatch);
+
+
+
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            //Console.WriteLine(c);
+
             Console.ReadKey();
         }
     }
